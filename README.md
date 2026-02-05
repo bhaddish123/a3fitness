@@ -1,89 +1,100 @@
-A3 Fitness
+Got it — here’s a lean, GitHub-native README. It keeps what matters for a repo (scope, architecture, MVP, API shape) and trims anything that reads like internal notes or a product memo.
 
-A3 Fitness is a full-stack fitness platform designed to support workout tracking, user authentication, and scalable backend services.
+You can paste this directly into README.md.
 
-Tech Stack
+:::writing{id=“58341” variant=“email” subject=“README.md content”}
+
+Drew Training Platform
+
+A production-style web application for managing personal training sessions, built with a secure backend, self-serve booking, and trainer-controlled workflows. This repository focuses on clean backend architecture, authentication, and booking logic suitable for real-world use.
+
+⸻
+
+🚀 Overview
+
+This project centralizes:
+	•	User authentication
+	•	Session scheduling
+	•	Payments and confirmations
+	•	Automated client communication
+
+The goal is to replace manual and third-party booking flows with a single, reliable system owned end-to-end.
+
+⸻
+
+🧠 Core MVP Flow
+	1.	User registers and authenticates
+	2.	User views trainer availability
+	3.	User books and pays for a session
+	4.	System sends confirmation and reminders
+	5.	User cancels or reschedules within policy rules
+
+⸻
+
+🔐 Backend Focus
+
+Authentication
+	•	JWT-based, stateless authentication
+	•	Role-aware access control
+	•	Client: book and manage sessions
+	•	Trainer: manage availability, policies, and content
+	•	Protected API endpoints
+
+Booking
+	•	Server-side availability management
+	•	Atomic booking to prevent double-booking
+	•	Payment-gated booking confirmation
+	•	Enforced cancellation and reschedule rules
+
+⸻
+
+📦 MVP Feature Set
+
+Client
+	•	Account creation & login
+	•	Direct session booking
+	•	Real-time availability
+	•	Payment + confirmation
+	•	Email / SMS reminders
+
+Trainer
+	•	Manage schedule and availability
+	•	Define cancellation / no-show policies
+	•	Update public-facing content
+	•	View upcoming sessions
+
+⸻
+
+🧩 API Surface (High-Level)
+	•	/auth — registration, login, token lifecycle
+	•	/users — role-based user access
+	•	/availability — schedule management
+	•	/bookings — create, cancel, reschedule sessions
+	•	/notifications — email / SMS triggers
+	•	/content — trainer-managed pages
+
+⸻
+
+📁 Project Structure
+
+backend/    Spring Boot REST API
+frontend/   React client
+
+
+⸻
+
+🛠️ Tech Stack
 	•	Backend: Java, Spring Boot
+	•	Auth: JWT
 	•	Database: PostgreSQL
 	•	Frontend: React
-	•	Auth: JWT-based authentication
-	•	Build Tools: Maven, npm
+	•	Payments: Third-party provider
+	•	Notifications: Email / SMS services
 
-Features
-	•	Secure user authentication
-	•	RESTful API design
-	•	Modular backend architecture
-	•	Environment-based configuration
-	•	Scalable foundation for fitness metrics and tracking
+⸻
 
-Project Structure
+📌 Status
 
-/backend   → Spring Boot API
-/frontend  → React client
+This repository represents an MVP-first implementation, with a strong emphasis on backend correctness, API design, and production-ready patterns. Future iterations may expand dashboards, analytics, and guided training features.
 
-Setup
-	1.	Clone the repo
-	2.	Configure environment variables (.env)
-	3.	Run backend with Maven
-	4.	Run frontend with npm
 
-Status
-
-Actively developed and iterated as a production-style project.
-
-# A3 Fitness 🏋️‍♂️
-
-A3 Fitness is a **full-stack fitness platform** built to explore scalable backend architecture, secure authentication, and modern web development practices. The project is designed as a production-style system with room to expand into real workout tracking and performance metrics.
-
----
-
-## 🚀 Tech Stack
-
-- **Backend:** Java, Spring Boot  
-- **Database:** PostgreSQL  
-- **Frontend:** React  
-- **Authentication:** JWT-based auth  
-- **Build Tools:** Maven, npm  
-
----
-
-## ✨ Features
-
-- Secure user authentication and authorization
-- RESTful API following clean architecture principles
-- Modular, maintainable backend design
-- Environment-based configuration for deployment flexibility
-- Scalable foundation for fitness data, metrics, and tracking
-
----
-
-## 📁 Project Structure
-
-```
-backend/    → Spring Boot REST API  
-frontend/   → React client application  
-```
-
----
-
-## ⚙️ Setup & Installation
-
-1. Clone the repository  
-2. Configure environment variables (`.env`)  
-3. Start the backend using Maven  
-4. Start the frontend using npm  
-
----
-
-## 📌 Project Status
-
-Actively developed as a **production-style learning and portfolio project**, with ongoing improvements and planned feature expansion.
-
----
-
-## 🎯 Future Improvements
-
-- Workout logging and analytics
-- User progress tracking
-- Expanded fitness metrics dashboard
-- Deployment automation

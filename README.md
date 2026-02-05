@@ -1,10 +1,5 @@
-Got it — here’s a lean, GitHub-native README. It keeps what matters for a repo (scope, architecture, MVP, API shape) and trims anything that reads like internal notes or a product memo.
 
-You can paste this directly into README.md.
-
-:::writing{id=“58341” variant=“email” subject=“README.md content”}
-
-Drew Training Platform
+A3 Fitness Training Platform
 
 A production-style web application for managing personal training sessions, built with a secure backend, self-serve booking, and trainer-controlled workflows. This repository focuses on clean backend architecture, authentication, and booking logic suitable for real-world use.
 
